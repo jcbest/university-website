@@ -114,8 +114,8 @@ text-align: right;
         display: block;
     }
     .nav-links ul{
-        position: fixed;
-        width: 200px;
+        position: absolute;
+        width: 100%;
         min-height: 100vh;
         background: #2c4054;
         top: 80px;
@@ -218,12 +218,12 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .campus-col{
     flex-basis: 32%;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
@@ -269,7 +269,7 @@ transition: 0.5S;
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .facilities-col{
     flex-basis: 31%;
@@ -280,6 +280,8 @@ transition: 0.5S;
 .facilities-col img{
     width: 100%;
     border-radius: 10px;
+    object-fit:cover;
+    height: 70%;
 }
 .facilities-col {
     padding: 0;
@@ -309,6 +311,7 @@ transition: 0.5S;
 
 .testimonial-col img{
     height: 40px;
+    width: 40px;
     margin-left: 5px;
     margin-right: 10px;
     border-radius: 50%;
@@ -322,14 +325,23 @@ transition: 0.5S;
     text-align: right;
     font-size: 12px;
 }
-.star{
+.testimonial-col .normal{
     width: 20px;
     height: 20px;
    margin-bottom: 10px;
+   color: darkorange;
+
+}
+
+.testimonial-col .normal-x{
+    width: 20px;
+    height: 20px;
+   margin-bottom: 10px;
+   color: rgb(255, 225, 0);
 
 }
 .cta {
-    margin: 30px auto;
+    margin: 2px auto;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/3.jpg);
     background-position: center;
@@ -340,7 +352,7 @@ transition: 0.5S;
 }
 .cta h1{
     color:#fff ;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 0;
     text-align: center;
 }
@@ -349,13 +361,13 @@ transition: 0.5S;
 
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+    padding: 10px 0;
     align-items: center;
 
 }
 .footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
     font-weight: 600;
     align-items: center;
 }
